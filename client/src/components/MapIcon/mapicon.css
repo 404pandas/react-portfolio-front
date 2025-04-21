@@ -1,0 +1,311 @@
+.icon-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexbox-turn-on {
+  display: flex;
+}
+.landing-icons {
+  width: 40%;
+  color: var(--icons);
+}
+.ind-items {
+  display: flex;
+}
+
+#building {
+  position: relative;
+}
+#knight {
+  position: relative;
+}
+#dragon {
+  position: relative;
+}
+#icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  width: 100vw;
+}
+
+.poi {
+  color: black;
+  animation: pulse 1.5s infinite !important;
+}
+
+/* ************* ANIMATIONS ***************** */
+.jump {
+  animation: jump 4s infinite alternate !important;
+}
+.wiggle {
+  animation: wiggle 2s infinite alternate !important;
+}
+
+.grow {
+  animation: grow 2s ease forwards;
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.fade {
+  animation: fade 1s infinite;
+}
+
+.swing {
+  animation: swing 1s ease-in-out infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
+}
+
+.flip {
+  animation: flip 2s linear infinite;
+}
+
+.shrink-grow {
+  animation: shrink-grow 1.5s ease-in-out infinite;
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+.wobble {
+  animation: wobble 1s ease-in-out infinite;
+}
+
+.grow-shrink {
+  animation: grow-shrink 2s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes shrink-grow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-shrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes grow {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 40%;
+  }
+}
+/* ****************************** */
+/*         Media Queries          */
+/* ****************************** */
+
+/* xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+lg, large: 1200px
+xl, extra-large: 1536px */
+
+/* xs, extra-small: 0px and up */
+@media (min-width: 0px) {
+  /* Styles for extra-small screens and up */
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10%;
+  }
+  .icon-container {
+    margin-top: 25vh;
+    height: 65vh;
+  }
+  .nav-item {
+    margin-left: 10%;
+  }
+}
+
+/* sm, small: 600px and up */
+@media (min-width: 600px) {
+  /* Styles for small screens and up */
+  a {
+    margin-left: -40%;
+  }
+  .ic-h2 {
+    font-size: 3rem;
+  }
+}
+
+/* md, medium: 900px and up */
+@media (min-width: 900px) {
+  /* Styles for medium screens and up */
+  img {
+    width: 50%;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10%;
+  }
+  .icon-container {
+    height: 65vh;
+  }
+  .nav-item {
+    margin-left: 10%;
+  }
+  .ind-about {
+    margin-bottom: -5%;
+  }
+  .ind-technologies {
+    margin-top: 5%;
+  }
+}
+
+/* lg, large: 1200px and up */
+@media (min-width: 1200px) {
+  /* Styles for large screens and up */
+
+  .ind-about {
+    margin-bottom: -15%;
+  }
+  .ind-technologies {
+    margin-top: -15%;
+  }
+}

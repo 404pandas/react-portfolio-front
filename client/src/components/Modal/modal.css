@@ -1,0 +1,34 @@
+/* modal styles */
+#responsive-dialog-title {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#responsive-dialog-title.dt-1 {
+  margin-left: 5%;
+  font-family: "Merienda", cursive !important;
+}
+
+.close-btn {
+  position: fixed !important;
+  bottom: 5%;
+  right: 5%;
+  color: var(--brown);
+}
+#test > div.MuiDialog-container.MuiDialog-scrollPaper > div {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#test > div.MuiDialog-container.MuiDialog-scrollPaper > div {
+  background-color: var(--tan) !important;
+}
+
+.divider {
+  border-color: var(--brown) !important;
+}
+
+.i-icon {
+  color: var(--brown);
+  z-index: 100 !important;
+}
